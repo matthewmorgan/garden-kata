@@ -6,7 +6,7 @@ describe('Garden', () => {
       .toEqual(['radishes', 'clover', 'grass', 'grass']);
   });
 
-  xtest('another for Alice', () => {
+  test('another for Alice', () => {
     expect(new Garden('VC\nRC').alice)
       .toEqual(['violets', 'clover', 'radishes', 'clover']);
   });
