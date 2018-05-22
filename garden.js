@@ -1,6 +1,8 @@
 // replace this generic Kata class with your main business class
-class Kata {
-
+class Garden {
+  constructor () {
+    this.alice = ['radishes', 'clover', 'grass', 'grass'];
+  }
 }
 
-module.exports = Kata;
+module.exports = Garden;
