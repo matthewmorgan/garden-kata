@@ -11,7 +11,12 @@ describe('Garden', () => {
       .toEqual(['violets', 'clover', 'radishes', 'clover']);
   });
 
-  xtest('for Bob', () => {
+  test('another for Alice2', () => {
+    expect(new Garden('VG\nRC').alice)
+      .toEqual(['violets', 'grass', 'radishes', 'clover']);
+  });
+
+  test('for Bob', () => {
     expect(new Garden('VVCG\nVVRC').bob)
       .toEqual(['clover', 'grass', 'radishes', 'clover']);
   });
@@ -27,7 +32,7 @@ describe('Full garden', () => {
   const diagram = 'VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV';
   const garden = new Garden(diagram);
 
-  xtest('for Alice', () => {
+  test('for Alice', () => {
     expect(garden.alice)
       .toEqual(['violets', 'radishes', 'violets', 'radishes']);
   });
